@@ -13,5 +13,9 @@ const calculateMMC = () => {
     const weight = Number(weightInput.value);
     const resultado = weight / (height ** 2);
 
-    window.alert(`valor do seu IMC = ${resultado.toFixed(2)}`);
+    if(height > 0 && weight > 0) {
+        window.alert(`valor do seu IMC = ${resultado.toFixed(2)}`);
+    } else {
+        window.alert('Digite um valor valido nos campos!!!');
+    }
 }
